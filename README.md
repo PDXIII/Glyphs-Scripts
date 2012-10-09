@@ -1,5 +1,5 @@
-GlyphsScripts
-=============
+Glyphs-Scripts
+==============
 
 My Python Scripts for [Glyphs App](http://glyphsapp.com/).
 You can clone this repository into your GlyphsApp Script folder located under `~/Library/Application Support/Glyphs/Scripts/` and have fun!
