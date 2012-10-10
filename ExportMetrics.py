@@ -18,15 +18,18 @@ def main():
 
 	try:
 		# This tries to open an existing file but creates a new file if necessary.
-		metricsTextFile = open('%s-Metrics.txt' % familyName, 'w')
+		metricsTextFile = open('%s-Metrics.json' % familyName, 'w')
 	except IOError:
 		pass
 	
-	metricsTextFile.write('"familyName" : %s,\n' % str(familyName))
-	metricsTextFile.write('"ascender" : %s,\n' % str(doc.selectedFontMaster().ascender))
-	metricsTextFile.write('"capHeight" : %s,\n' % str(doc.selectedFontMaster().capHeight))
-	metricsTextFile.write('"xHeight" : %s,\n' % str(doc.selectedFontMaster().xHeight))
-	metricsTextFile.write('"descender" : %s' % str(doc.selectedFontMaster().descender))
+	metricsTextFile.write('{\n\t"familyName" : %s,\n' % str(familyName))
+	metricsTextFile.write('\t"metrics" : [\n')
+	metricsTextFile.write('\t\t"ascender" : %s,\n' % str(doc.selectedFontMaster().ascender))
+	metricsTextFile.write('\t\t"capHeight" : %s,\n' % str(doc.selectedFontMaster().capHeight))
+	metricsTextFile.write('\t\t"xHeight" : %s,\n' % str(doc.selectedFontMaster().xHeight))
+	metricsTextFile.write('\t\t"descender" : %s' % str(doc.selectedFontMaster().descender))
+	metricsTextFile.write('\n\t]\n}')
+
 	
 	metricsTextFile.close()
 
