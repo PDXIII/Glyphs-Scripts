@@ -14,8 +14,12 @@ The syntax is a little bit pseudo .json for better handling in AdobeIndesign lat
 def main():
 	doc = Glyphs.currentDocument
 	familyName = doc.font.familyName
-	os.chdir(os.path.join(os.path.expanduser('~'), 'Desktop/FontMetrics'))
-
+	os.chdir(os.path.join(os.path.expanduser('~'), 'Desktop'))
+	try:
+		os.chdir('FontMetrics')
+	except Exception, e:
+		os.mkdir('FontMetrics')
+		os.chdir('FontMetrics')
 	try:
 		# This tries to open an existing file but creates a new file if necessary.
 		metricsTextFile = open('%s-Metrics.json' % familyName, 'w')
