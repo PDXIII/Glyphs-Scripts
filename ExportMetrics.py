@@ -32,7 +32,14 @@ def main():
 	metricsTextFile.write('\t\t"capHeight" : %s,\n' % str(doc.selectedFontMaster().capHeight))
 	metricsTextFile.write('\t\t"xHeight" : %s,\n' % str(doc.selectedFontMaster().xHeight))
 	metricsTextFile.write('\t\t"descender" : %s' % str(doc.selectedFontMaster().descender))
-	metricsTextFile.write('\n\t}\n}')
+	metricsTextFile.write('\n\t},')
+	# this Array of the metrics inspired by the Berthold Bilble. All teh Metrics are relativ to the uppercase height
+	metricsTextFile.write('\n\t"metricsArray" : [\n')
+	metricsTextFile.write('\t\t1.0,\n')
+	metricsTextFile.write('\t\t%s,\n' % str(doc.selectedFontMaster().xHeight / doc.selectedFontMaster().capHeight))
+	metricsTextFile.write('\t\t%s,\n' % str(doc.selectedFontMaster().ascender / doc.selectedFontMaster().capHeight))
+	metricsTextFile.write('\t\t%s' % str(doc.selectedFontMaster().descender / doc.selectedFontMaster().capHeight))
+	metricsTextFile.write('\n\t]\n}')
 
 	metricsTextFile.close()
 

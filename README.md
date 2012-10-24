@@ -8,3 +8,8 @@ For more scripts take a look at [schriftgestalt](https://github.com/schriftgesta
 
 Greetz,
 PDXIII
+
+##ExportMetrics.py
+
+This script writes the basic metrics of the current font provided by the font preference panel (cmd + i) into an JSON file under (__user__/Desktop/FontMetrics/__fontname__-Metrics.json).
+
