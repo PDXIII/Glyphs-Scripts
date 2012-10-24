@@ -11,5 +11,5 @@ PDXIII
 
 ##ExportMetrics.py
 
-This script writes the basic metrics of the current font provided by the font preference panel (cmd + i) into an JSON file under (__user__/Desktop/FontMetrics/__fontname__-Metrics.json).
+This script writes the basic metrics of the current font provided by the font preference panel (cmd + i) into an JSON file under (*user*/Desktop/FontMetrics/*fontname*-Metrics.json).
 
