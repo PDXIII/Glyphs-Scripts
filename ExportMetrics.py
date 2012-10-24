@@ -7,8 +7,8 @@ from AppKit import *
 from Foundation import *
 
 '''
-This script writes the basic metrics of the current font into an textfile. 
-The syntax is a little bit pseudo .json for better handling in AdobeIndesign later.
+This script writes the basic metrics of the current font provided by the font preference 
+panel (cmd + i) into an JSON file under `~/Desktop/FontMetrics/*fontname*-Metrics.json` .
 '''
 
 def main():
