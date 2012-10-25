@@ -9,11 +9,10 @@ For more scripts take a look at [schriftgestalt](https://github.com/schriftgesta
 Greetz,
 PDXIII
 
-##Sketch.py
-
-This is just a Sketch for experimenting. It's hardly recommanded not to use this script. If there is something useful in it you will find it in another script with a discription.
-
 ##ExportMetrics.py
 
 This script writes the basic metrics of the current font provided by the font preference panel (cmd + i) into an JSON file under `~/Desktop/FontMetrics/*fontname*-Metrics.json` .
 
+##Sketch.py
+
+This is just a Sketch for experimenting. **It's hardly recommanded not to use this script.** If there is something useful in it you will find it in another script with a discription.
