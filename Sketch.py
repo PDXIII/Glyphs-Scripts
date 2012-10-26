@@ -13,17 +13,27 @@ If there is something useful in it you will find it in another script with a dis
 '''
 
 def main():
-	doc = Glyphs.currentDocument
-	font = doc.font
-	myChar = font.glyphs['A']
-	myLayer = myChar.layers[0]
-	
-	print len(myLayer.paths)
-	
-	for path in myLayer.paths:
-	#	print path.nodes
-		print max(node.y for node in path.nodes)
-		print max(path.nodes, key=attrgetter("y"))
+  glyphArray = ['A','l','x','p']
+  glyphsMetrics = []
+  doc = Glyphs.currentDocument
+  
+  for glyph in glyphArray:
+    tempArray = []
+    
+    if glyph == 'p':
+      for path in doc.font.glyphs[glyph].layers[0].paths:
+  
+        tempArray.append(min(node.y for node in path.nodes))
+      glyphsMetrics.append(min(tempArray))
+  
+      
+    else:
+      for path in doc.font.glyphs[glyph].layers[0].paths:
+      
+        tempArray.append(max(node.y for node in path.nodes))
+      glyphsMetrics.append(max(tempArray))
+        
+  print(glyphsMetrics)
 
 if __name__ == '__main__':
-	main()
+  main()
