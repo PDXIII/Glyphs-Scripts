@@ -1,4 +1,4 @@
-#MenuTitle: Sketch
+#MenuTitle: ExportHhxpMetric
 import sys
 import os
 from GlyphsApp import *

@@ -1,4 +1,4 @@
-#MenuTitle: Sketch
+#MenuTitle: ExportHhxpMetric
 import sys
 import os
 from GlyphsApp import *
@@ -10,8 +10,10 @@ from operator import itemgetter, attrgetter
 import json
 
 '''
-This is just a Sketch for experimenting. It's hardly recommanded not to use this script. 
-If there is something useful in it you will find it in another script with a discription.
+This script exports the real extremes of the font which 
+are the highest points of H, k and x and the lowest point 
+of p. It creates a new nicely formated JSON file under 
+`~/Desktop/Metrics.json`
 '''
 
 def main():
