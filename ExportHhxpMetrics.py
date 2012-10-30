@@ -1,4 +1,4 @@
-#MenuTitle: ExportHhxpMetric
+#MenuTitle: ExportHhxpMetrics.py
 import sys
 import os
 from GlyphsApp import *

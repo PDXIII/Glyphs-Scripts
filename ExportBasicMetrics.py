@@ -1,4 +1,4 @@
-#MenuTitle: Export Metrics
+#MenuTitle: ExportBasicMetrics.py
 import sys
 import os
 from GlyphsApp import *
