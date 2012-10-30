@@ -15,7 +15,7 @@ This script writes the basic metrics of the current font provided by the font pr
 
 ##ExportHkxpMetric.py
 
-This script exports the real extremes of the font which are the highest points of H, k and x and the lowest point of p. It creates a new nicely formated JSON file under `~/Desktop/Metrics.json`
+This script exports the real extremes of all open fonts which are the highest points of H, k and x and the lowest point of p. It creates a new nicely formated JSON file under `~/Desktop/Metrics.json`
 
 ##Sketch.py
 
