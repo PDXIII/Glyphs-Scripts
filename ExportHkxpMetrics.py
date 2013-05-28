@@ -10,8 +10,7 @@ from operator import itemgetter, attrgetter
 import json
 
 '''
-This is just a Sketch for experimenting. It's hardly recommanded not to use this script. 
-If there is something useful in it you will find it in another script with a discription.
+This scripts gets the metrics of all the fonts wich are open in Glyphs app
 '''
 
 def main():
