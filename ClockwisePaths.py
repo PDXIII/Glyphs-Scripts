@@ -1,4 +1,4 @@
-#MenuTitle: Sketch
+#MenuTitle: Make clockwise paths
 
 import GlyphsApp
 import random
