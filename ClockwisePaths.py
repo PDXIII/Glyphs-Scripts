@@ -1,12 +1,11 @@
-#MenuTitle: Sketch
+#MenuTitle: Make clockwise paths
 
 import GlyphsApp
 import random
 random.seed()
 
 '''
-This is just a Sketch for experimenting. It is hardly recommanded not to use this script. 
-If there is something useful in it you will find it in another script with a discription.
+This script sets the direction of all paths to clockwise
 '''
 
 Doc = Glyphs.currentDocument
