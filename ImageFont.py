@@ -13,9 +13,8 @@ import Tkinter, tkFileDialog
 '''
 This script is still in development!!!
 This script reads the structure of an folder and the images within and creates a glyph for every images.
+I really need toknow how dialogs work in python 
 '''
-
-# I really need toknow how dialogs work in python 
 root = Tkinter.Tk()
 sys.argv = 'Some Text' # This is not really correct, but it works. 
 
