@@ -9,14 +9,14 @@ For more scripts take a look at [schriftgestalt](https://github.com/schriftgesta
 Greetz,
 PDXIII
 
-##ExportMetrics.py
+## ExportMetrics.py
 
 This script writes the basic metrics of the current font provided by the font preference panel (cmd + i) into an JSON file under `~/Desktop/FontMetrics/*fontname*-Metrics.json` .
 
-##ExportHkxpMetric.py
+## ExportHkxpMetric.py
 
 This script exports the real extremes of all open fonts which are the highest points of H, k and x and the lowest point of p. It creates a new nicely formated JSON file under `~/Desktop/Metrics.json`
 
-##Sketch.py
+## Sketch.py
 
 This is just a Sketch for experimenting. **It's hardly recommanded not to use this script.** If there is something useful in it you will find it in another script with a discription.
